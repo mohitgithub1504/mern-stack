@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+            column-gap: 20px;
+        }
+
+        .grid-item1 {
+            width: 500px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 50px;
+            font-size: 20px;
+            text-align: left;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .grid-item2 {
+            width: 900px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 50px;
+            font-size: 20px;
+            text-align: left;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        img {
+            width: 200px;
+        }
+
+        img:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.298);
+        }
+
+        .column {
+            float: left;
+            width: 23.33%;
+            padding: 7px;
+        }
+
+        button {
+            background-color: #ff3a3a;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 32px 2px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+
+        button:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1 style="text-align: center;">Online Movie Ticket Booking</h1>
+
+        <div class="grid-container">
+            <div class="grid-item1">
+                <label>Full Name :</label>
+                <input type="text" required placeholder="Enter your name">
+                <br><br>
+
+                <label>Email Address :</label>
+                <input type="email" required placeholder="Enter your email">
+                <br><br>
+
+                <label>Phone No :</label>
+                <input type="number" required placeholder="Enter your number">
+                <br><br>
+
+                <label>Gender</label>
+                <input type="radio" name="gender" id="">Male
+                <input type="radio" name="gender" id="">Female
+                <input type="radio" name="gender" id="">Others
+                <br><br>
+
+                <label>City :</label>
+                <select>
+                    <option>Lucknow</option>
+                    <option>Delhi</option>
+                    <option>Bengaluru</option>
+                    <option>Chennai</option>
+                    <option>Pune</option>
+                    <option>Kolkata</option>
+                    <option>Mumbai</option>
+                </select>
+                <br><br>
+
+
+                <label>Theater :</label>
+                <select>
+                    <option>PVR Cinemas</option>
+                    <option>Big Cinemas</option>
+                    <option>INOX Theater</option>
+                    <option>Wave Cinemas</option>
+                    <option>Fun Cinemas</option>
+                </select>
+                <br><br>
+
+
+                <label>Number of Seats :</label>
+                <input type="number" placeholder="eg : 2">
+                <br><br>
+
+                <label>Movie Name :</label>
+                <select>
+                    <option>Ant-Man and the Wasp: Quantumania</option>
+                    <option>Avatar: The Way of Water</option>
+                    <option>Michael</option>
+                    <option>Puss In Boots: The Last Wish</option>
+                    <option>The House of Dead Horror</option>
+                    <option>Shiv Shastri Balboa</option>
+                    <option>Amigos</option>
+                    <option>Shehzada</option>
+                </select>
+                <br><br>
+
+
+                <label>Language :</label>
+                <select>
+                    <option>Hindi</option>
+                    <option>English</option>
+                    <option>Telugu</option>
+                    <option>Tamil</option>
+                    <option>Malayalam</option>
+                </select>
+                <br><br>
+
+
+                <label>Date :</label>
+                <input type="date">
+                <br><br>
+
+                <label>Select Time :</label>
+                <input type="time">
+                <br><br>
+
+
+                <input type="checkbox"> I Accept Terms and Conditions
+                <details>
+                    <summary>Terms and Conditions</summary>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, expedita!</p>
+                </details>
+                <br>
+
+                <button type="submit">Book Ticket</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="reset">Reset</button>
+            </div>
+
+            <div class="grid-item2">
+                <div class="row">
+                    <div class="column">
+                        <a href=""><img width="180"
+                                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MTI5LjVLIGxpa2Vz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00302402-uxblpazjxh-portrait.jpg"
+                                alt="image"></a>
+                    </div>
+                    <div class="column">
+                        <a href=""><img width="180"
+                                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OS4xLzEwICAzLjJLIHZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00046641-pxpyvykaxu-portrait.jpg"
+                                alt="image"></a>
+                    </div>
+                    <div class="column">
+                        <a href=""><img width="180"
+                                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ni44LzEwICAxMi43SyB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00342919-sgwzqgykzg-portrait.jpg"
+                                alt="image"></a>
+                    </div>
+                    <div class="column">
+                        <a href=""><img width="180"
+                                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC43LzEwICAyMTcuNEsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00037264-bdbylvqqwb-portrait.jpg"
+                                alt="image"></a>
+                    </div>
+                    <div class="column">
+                        <a href=""><img width="180"
+                                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-NS45LzEwICBOZXcgUmVsZWFzZQ%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00021990-drmdwhjfnq-portrait.jpg"
+                                alt="image"></a>
+                    </div>
+                    <div class="column">
+                        <a href=""><img width="180"
+                                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ny4zLzEwICA1MDAgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00350893-kksllqcchx-portrait.jpg"
+                                alt="image"></a>
+                    </div>
+                    <div class="column">
+                        <a href=""><img width="180"
+                                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC41LzEwICAxMi41SyB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00349062-wanxhharkb-portrait.jpg"
+                                alt="image"></a>
+                    </div>
+                    <div class="column">
+                        <a href=""><img width="180"
+                                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MzMuNUsgbGlrZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00312198-wegdtlltsf-portrait.jpg"
+                                alt="image"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+</body>
+
+</html>

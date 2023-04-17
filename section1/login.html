@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+
+
+    <style>
+
+        :root{
+            --theme-color: rgb(0, 42, 255);
+        }
+
+        * {
+            font-family: Roboto;
+        }
+
+        .mycard {
+            border-radius: 20px;
+            width: 25%;
+            padding: 50px;
+            box-sizing: border-box;
+            background-color: white;
+            box-shadow: 8px 8px 16px 15px #000000a5;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /*background-color: #ccc;*/
+            background-image: url('https://burst.shopifycdn.com/photos/contact-us-flatlay.jpg?width=1200&format=pjpg&exif=1&iptc=1');
+            background-size: cover;
+            backdrop-filter:  blur(2px) contrast(100%);
+            margin: 0;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow: 2px 2px 1px rgb(76, 75, 75);
+        }
+
+        .myinput, .mybtn, .mylink1, .mylink2, .mylink3{
+            display: block;
+            width: 100%;
+        }
+
+        .myinput{
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 2px solid var(--theme-color);
+        }
+
+        .mybtn{
+           /* background-color:  var(--theme-color); */
+            background-image: linear-gradient(120deg, rgb(59, 36, 237),rgb(210, 67, 250));
+            color: white;
+            font-weight: bold;
+            padding: 15px;
+            border: none;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+        .mylink1{
+            text-decoration: none;
+            font-weight: bold;
+            color: var(--theme-color);
+        }
+
+        .mylink2{
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            color: var(--theme-color);
+            margin-top: 50px;
+        }
+
+        .mylink3{
+            text-align: center;
+            text-decoration: none;
+            color: #999;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mycard">
+
+        <p class="title">Log In</p>
+    <form>
+
+        <input class="myinput" type="email" placeholder="Enter Email Address">
+        <input class="myinput" type="password" placeholder="Enter Password">
+
+        <a href="" class="mylink1">Forget Password</a>
+
+        <button type="submit" class="mybtn">Submit</button>
+
+        <a href="" class="mylink2">SignUp</a>
+
+        <a href="" class="mylink3">Terms & Conditions</a>
+    </form>
+
+    </div>
+
+</body>
+
+</html>
