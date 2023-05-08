@@ -16,6 +16,7 @@ const Navbar = () => {
           alt="MDB Logo"
           loading="lazy"
           style={{ marginTop: "-1px" }}
+
         />
       </a>
       {/* Toggle button */}
@@ -47,6 +48,11 @@ const Navbar = () => {
           <li className="nav-item">
             <NavLink className="nav-link" to="/Signup">
               Signup
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/Manageuser">
+              Manage User
             </NavLink>
           </li>
         </ul>
